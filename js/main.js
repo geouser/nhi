@@ -48,6 +48,20 @@ jQuery(document).ready(function($) {
           scrollTop: top
       }, 800);
   });
+
+$(function() { // add class on scroll
+  var $document = $(document),
+      $element = $('.valves__item--fixed'),
+      className = 'hasScrolled';
+      className2 = 'endScrolled';
+
+  $document.scroll(function() {
+    $element.toggleClass(className, $document.scrollTop() >= 1787.875);
+    $element.toggleClass(className2, $document.scrollTop() >= 2532.2);
+  });
+});
+
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
