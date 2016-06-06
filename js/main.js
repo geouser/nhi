@@ -20,9 +20,6 @@ if (!params.isMobile) {
       $('.viewport').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
   });*/
 
-  jQuery( '.viewport' ).parallax({
-    mouseport: jQuery(".offer")
-  }); 
 }
 
 
@@ -52,7 +49,6 @@ jQuery(document).ready(function($) {
 var top = $('.valves_row_2').offset().top;
 var bottom = $('.valves_row_3').offset().top;
 
-console.log(top);
 $('.valves__item--fixed').css('top', top);
 
 $(function() { // add class on scroll
@@ -160,154 +156,6 @@ $(function() { // add class on scroll
       }
     }
   });
-
-
-
-  $(function() {
-    $( ".accordion" ).accordion({
-      heightStyle: "content",
-      collapsible: true
-    });
-  });
-
-
-
-jQuery(document).ready(function($) {
-  function buildGallerySlider(){
-
-    var windowWidth = $(window).width();
-    var itemCount = Math.ceil(windowWidth/320);
-
-    var requiredWidth = itemCount*320;
-    //var galleryMargin = (requiredWidth - windowWidth)/2;
-    var galleryMargin = requiredWidth - windowWidth;
-
-    var galleryBlock = $('#photogallery .images');
-
-    if (requiredWidth > windowWidth) {
-      galleryBlock.css({'margin': '0 -'+galleryMargin+'px 0 0'});
-
-      //var itemCountScroll = itemCount-1;
-    var itemCountScroll = 1;
-    
-    } else {
-      galleryBlock.css({'margin': '0'});
-
-      var itemCountScroll = itemCount;
-    }
-
-    galleryConfig = {
-      adaptiveHeight: true,
-      autoplay: false,
-      autoplaySpeed: 12000,
-      arrows: false,
-      dots: false,
-      fade: false,
-      infinite: true,
-      initialSlide: 1,
-      pauseOnHover: true,
-      slide: '.col',
-      slidesToShow: itemCount,
-      slidesToScroll: itemCountScroll,
-      speed: 1000,
-      touchMove: true,
-      useCSS: true
-    };
-
-    gallerySlider = $('#photogallery .images').slick(galleryConfig);
-  
-
-  var rNext = true;
-  var rPrev = true; 
-
-  $('.rNext').on({
-    mouseenter: function(){
-    rNext = true;
-    fRepNext();
-    },
-    mouseleave: function(){
-    rNext = false;
-    }
-  });
-
-  $('.rPrev').on({
-    mouseenter: function(){
-    rPrev = true;
-    fRepPrev();
-    },
-    mouseleave: function(){
-    rPrev = false;
-    }
-  });
-
-  function fRepNext(){
-    $('#photogallery .images').slick("slickSetOption", "speed", "3000").slick("slickSetOption", "cssEase", "linear").slick("slickNext").slick("slickSetOption", "speed", "1000");
-    if (rNext){
-    setTimeout(fRepNext, 0);
-    }
-  }
-
-  function fRepPrev(){
-    $('#photogallery .images').slick("slickSetOption", "speed", "3000").slick("slickSetOption", "cssEase", "linear").slick("slickPrev").slick("slickSetOption", "speed", "1000");
-    if (rPrev){
-    setTimeout(fRepPrev, 0);
-    }
-  };
-
-
-  $('#photogallery .images .col').magnificPopup({
-       delegate: '.item',
-       type: 'image',
-       fixedContentPos: false,
-       removalDelay: 300,
-       mainClass: 'mfp-fade',
-      gallery:{
-        enabled:true
-      }
-    });
-  
-  };
-
-  buildGallerySlider();
-
-  $(window).resize(function(){
-    gallerySlider.slick('unslick');
-    buildGallerySlider();
-  });
-
-});
-
-
-  if ($('#map-canvas').length > 0) {
-    function googleMap_initialize() {
-
-        var mapCenterCoord = new google.maps.LatLng(55.722227, 37.259083);
-        var mapMarkerCoord = new google.maps.LatLng(55.722227, 37.259083);
-
-        var mapOptions = {
-          center: mapCenterCoord,
-          zoom: 11,
-          //draggable: false,
-          disableDefaultUI: true,
-          scrollwheel: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        var markerImage = new google.maps.MarkerImage('images/blue-marker.svg');
-        var marker = new google.maps.Marker({
-          icon: markerImage,
-          position: mapMarkerCoord, 
-          map: map,
-          title:"NHI Group"
-        });
-        $(window).resize(function (){
-          map.setCenter(mapCenterCoord);
-        });
-    };
-    googleMap_initialize();
-
-  };
 
 
 });
