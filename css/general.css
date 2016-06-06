@@ -1039,7 +1039,7 @@ button.mobile_menu:hover {
 }
 .text_greating .main {
     position: relative;
-    font: 22px 'open_sanssemibold';
+    font: 18px 'open_sanssemibold';
     color: #000;
     margin-bottom: 25px;
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
@@ -1727,7 +1727,7 @@ button.down:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #e7aa1b;
+    background-color: #ffb300;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
