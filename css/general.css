@@ -248,14 +248,15 @@ header {
     width: 100%;
     z-index: 50;
     text-align: center;
-    /*-webkit-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
     -o-transition: all 0.1s linear;
-    transition: all 0.1s linear;*/
+    transition: all 0.1s linear;
 }
 
 
 .headroom--not-top header {
-   display: none;
+   height: 0;
+   overflow: hidden;
 }
 .logo {
     display: inline-block;
