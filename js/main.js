@@ -46,8 +46,8 @@ jQuery(document).ready(function($) {
       }, 800);
   });
 
-var top = $('.valves_row_2').offset().top;
-var bottom = $('.valves_row_3').offset().top;
+var top = $('.valves_row_2').offset().top + 20;
+var bottom = $('.valves_row_3').offset().top + 30;
 
 $('.valves__item--fixed').css('top', top);
 
