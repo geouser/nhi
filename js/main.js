@@ -49,16 +49,27 @@ jQuery(document).ready(function($) {
       }, 800);
   });
 
+var top = $('.valves_row_2').offset().top;
+var bottom = $('.valves_row_3').offset().top;
+
+console.log(top);
+$('.valves__item--fixed').css('top', top);
+
 $(function() { // add class on scroll
   var $document = $(document),
       $element = $('.valves__item--fixed'),
-      className = 'hasScrolled';
+      className = 'hasScrolled',
       className2 = 'endScrolled';
 
+
   $document.scroll(function() {
-    $element.toggleClass(className, $document.scrollTop() >= 1787.875);
-    $element.toggleClass(className2, $document.scrollTop() >= 2532.2);
+    $element.toggleClass(className, $document.scrollTop() >= top);
+    $element.toggleClass(className2, $document.scrollTop() >= bottom);
+    $('.valves__item--fixed').css('top', top);
+    $('.valves__item--fixed.hasScrolled').css('top', '60px');
+    $('.valves__item--fixed.hasScrolled.endScrolled').css('top', bottom);
   });
+
 });
 
 

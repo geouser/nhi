@@ -3471,23 +3471,17 @@ p.a-notice {
     width: 100% !important;
 }
 
-.valves {
-    position: relative;
-}
 .valves__item--fixed {
     position: absolute;
-    top: 1101px;
     right: calc((100% - 1100px) / 2);
     text-align: center;
 }
 .valves__item--fixed.hasScrolled {
     position: fixed;
-    top: 60px;
     right: calc((100% - 1100px) / 2);
 }
 .valves__item--fixed.hasScrolled.endScrolled {
     position: absolute;
-    top: 1892px;
 }
 
 @media (max-width: 1300px) {
