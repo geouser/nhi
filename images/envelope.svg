@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="66.684px" height="42.827px" viewBox="0 0 66.684 42.827" enable-background="new 0 0 66.684 42.827" xml:space="preserve">
+<rect x="0.708" y="0.708" fill="#FFFFFF" width="65.266" height="41.41"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0" width="66.683" height="42.827"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<rect x="0.709" y="0.708" clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="1.417" stroke-miterlimit="10" width="65.266" height="41.41"/>
+	<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="1.417" stroke-miterlimit="10" points="
+		28.04,24.777 8.212,37.357 0.708,42.118 	"/>
+	<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="1.417" stroke-miterlimit="10" points="
+		65.975,42.118 58.473,37.358 38.641,24.775 	"/>
+</g>
+<polyline fill="none" stroke="#BD1B18" stroke-width="1.417" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	6.958,7.168 33.341,29.447 58.823,7.168 "/>
+</svg>
