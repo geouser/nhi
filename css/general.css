@@ -223,7 +223,7 @@ button.dark:hover,
 }
 @media (min-width: 701px) {
     .offer{
-        background-image: url(../images/offer.png);
+        background-image: url(../images/offer.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
@@ -254,12 +254,9 @@ header {
 }
 
 
-/*header.headroom--unpinned,
-header.headroom--pinned {
-    height: 60px;
-    position: fixed;
-    top: 0;
-}*/
+.headroom--not-top header {
+   display: none;
+}
 .logo {
     display: inline-block;
     vertical-align: middle;
@@ -421,11 +418,9 @@ nav {
     -o-transition: top 0.1s linear;
     transition: top 0.1s linear;
 }
-/*nav.headroom--unpinned,
-nav.headroom--pinned {
-    top: 60px;
-    position: fixed;
-}*/
+.headroom--not-top nav {
+    top: 0;
+}
 nav ul {
     margin: 0;
     padding: 0;
@@ -575,213 +570,41 @@ button.mobile_menu:hover {
 
 
 .offer .wrapper {
-    /*width: 100%;*/
-    padding-top: 3.33%;
-    background-color: rgba(0, 0, 0, 0.8);
+    padding: 6% 0;
     position: relative;
     z-index: 5;
 }
-/*.offer .wrapper:after {
-    width: 100%;
-    position: absolute;
-    background-color: #cc0000;
-    opacity: 0.8;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 100px;
-    z-index: -1;
-}*/
 .offer {
     position: relative;
     overflow: visible;
-}
-.helper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    overflow: hidden;
-}
-.viewport{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102%;
-    height: 102%;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    /*-webkit-transition: all 0.05s ease;*/
-    /*-o-transition: all 0.05s ease;*/
-    /*transition: all 0.05s ease;*/
-}
-/*@media (min-width: 700px) {
-  .viewport {
-   background-image: url(../images/offer.png);
-  }
-}*/
-@media (max-width: 699px) {
-    .viewport {
-        display: none;
-    }
-    .v1 {
-        display: block;
-        background-image: url(../images/offer_m.jpg)!important;
-        background-position: 50% 0%!important;
-        background-size: cover!important;
-        height: 100%!important;
-    }
+    text-align: left;
 }
 
-.offer:after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 0;
-    content: '';
-}
-
-.detal-1 {
-    width: 18%;
-    height: auto;
-    position: absolute;
-    top: 6%;
-    left: 0;
-}
-.v1 {
-    width: 101%;
-    height: 101%;
-    background-image: url(../images/777.png);
-    background-size: 18% auto;
-    background-position: 0% 10%;
-}
-.detal-2 {
-    width: 6.6%;
-    height: auto;
-    position: absolute;
-    top: 55%;
-    left: 14%;
-}
-.v2 {
-    width: 104%;
-    height: 104%;
-    background-image: url(../images/444.png);
-    background-size: 6.6% auto;
-    background-position: 14% 65%;
-}
-.detal-3 {
-    width: 12.2%;
-    height: auto;
-    position: absolute;
-    top: 74%;
-    left: 3.5%;
-}
-.v3 {
-    width: 103%;
-    height: 103%;
-    background-image: url(../images/666.png);
-    background-size: 12.2% auto;
-    background-position: 3.5% 80%;
-}
-.detal-4 {
-    width: 25%;
-    height: auto;
-    position: absolute;
-    top: 10%;
-    left: 24%;
-}
-.v4 {
-    background-image: url(../images/111.png);
-    background-size: 25% auto;
-    background-position: 34% 30%;
-}
-.detal-5 {
-    width: 22%;
-    height: auto;
-    position: absolute;
-    top: 15%;
-    right: 21%;
-}
-.v5 {
-    width: 101%;
-    height: 101%;
-    background-image: url(../images/333.png);
-    background-size: 22% auto;
-    background-position: 80% 25%;
-}
-.detal-6 {
-    width: 23%;
-    height: auto;
-    position: absolute;
-    bottom: -6%;
-    right: 5.5%;
-}
-.v6 {
-    width: 102%;
-    height: 102%;
-    background-image: url(../images/222.png);
-    background-size: 25% auto;
-    background-position: 92% 85%;
-}
-.detal-7 {
-    width: 15%;
-    height: auto;
-    position: absolute;
-    top: 25%;
-    right: -3%;
-    opacity: 0.7;
-}
-.v7 {
-    width: 103%;
-    height: 103%;
-    background-image: url(../images/555.png);
-    background-size: 15% auto;
-    background-position: 103% 35%;
-}
-.detal-8 {
-    width: 11.4%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    right: -2%;
-    opacity: 0.7;
-}
-.v8 {
-    width: 104%;
-    height: 104%;
-    background-image: url(../images/888.png);
-    background-size: 11.4% auto;
-    background-position: 102% 60%;
-}
-
-
-@media (min-width: 700px) {
-    .offer .wrapper {
-        /* background-image: url(../images/offer.jpg);*/
-    }
-}
-@media (max-width: 699px) {
-    .offer .wrapper {
-        /*background-image: url(../images/offer_m.jpg);
-        background-position: 50% 0%;
-        background-size: cover;*/
-    }
-}
 .offer h1 {
     color: #fff;
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 20px;
-}
+    display: inline-block;
+    text-align: left;
+    
 
+}
+.offer h1 span {
+    display: inline-block;
+    background-color: #000;
+    line-height: 45px;
+    padding: 2px 5px;
+}
+.offer .title {
+    display: inline-block;
+    vertical-align: top;
+    width: -webkit-calc(100% - 500px);
+    width: calc(100% - 500px);
+    text-align: left;
+}
 .offer p.delivery {
     font: 30px 'open_sanssemibold';
-    color: #e8ae26;
+    color: #000;
 }
 
 .offer button.catalog {
@@ -805,9 +628,13 @@ button.mobile_menu:hover {
     margin: 0 auto;
     position: relative;
     font-family: 'open_sanssemibold';
+    box-shadow: 0px 0px 50px 0px rgba( 32, 30, 28, .2);
 }
 .offer .order_form {
     bottom: -40px;
+    bottom: 0;
+    display: inline-block;
+    vertical-align: top;
 }
 .order_form h3 {
     font-size: 34px;
@@ -821,10 +648,13 @@ button.mobile_menu:hover {
 
 .order_form input[type="text"] {
     width: 100%;
-    margin: 30px 0 20px;
+    height: 45px;
+    margin: 20px 0 20px;
     text-align: left;
     border: none;
-    border-bottom: 2px solid #C6C6C6;
+    color: #6d6d6d;
+    font-size: 18px;
+    border-bottom: 2px solid #bd1b18;
     font-family: 'open_sanssemibold';
 }
 .order_form span.req {
@@ -886,6 +716,9 @@ button.mobile_menu:hover {
     font-family: 'open_sanssemibold';
     font-size: 20px;
     color: #fff;
+}
+.order_form button {
+    margin-top: 50px;
 }
 .vacancies_h {
     height: 30px;
