@@ -587,9 +587,8 @@ button.mobile_menu:hover {
     margin-bottom: 20px;
     display: inline-block;
     text-align: left;
-    
-
 }
+
 .offer h1 span {
     display: inline-block;
     background-color: #000;
@@ -602,6 +601,35 @@ button.mobile_menu:hover {
     width: -webkit-calc(100% - 500px);
     width: calc(100% - 500px);
     text-align: left;
+}
+@media (max-width: 1200px) {
+    .offer .title {
+        width: -webkit-calc(100% - 420px);
+        width: calc(100% - 420px);
+    }
+    .offer h1 {
+        font-size: 36px;
+    }
+    .offer h1 span {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .offer .title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .offer .title br {
+        display: inline;
+    }
+    .offer h1 {
+        text-align: center;
+    }
+    .offer h1 span {
+        margin-bottom: 5px;
+    }
 }
 .offer p.delivery {
     font: 30px 'open_sanssemibold';
@@ -632,10 +660,22 @@ button.mobile_menu:hover {
     box-shadow: 0px 0px 50px 0px rgba( 32, 30, 28, .2);
 }
 .offer .order_form {
-    bottom: -40px;
     bottom: 0;
     display: inline-block;
     vertical-align: top;
+}
+@media (max-width: 1200px) {
+    .offer .order_form {
+        width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        bottom: 0!important;
+    }
+}
+@media (max-width: 500px) {
+    .offer .order_form {
+        width: 96%;
+    }
 }
 .order_form h3 {
     font-size: 34px;
@@ -810,8 +850,6 @@ button.mobile_menu:hover {
 }
 
 @media (max-width: 1000px) {
-    /*nav.headroom--unpinned,
-    nav.headroom--pinned          { top: 0;}*/
     nav                           { height: 50px;}
     nav ul                        { position: absolute;
                                     top: 100%;
@@ -851,7 +889,7 @@ button.mobile_menu:hover {
     .order                        { display: none; vertical-align: middle; height: auto; float: none;}
     .selection_box                { padding-right: 0;}
 
-    .offer .wrapper               { padding-top: 10%; padding-bottom: 0;}
+    .offer .wrapper               { padding-top: 8%; padding-bottom: 8%;}
     .offer .wrapper:after         { bottom: 0;}
     .offer h1                     { font-size: 35px;}
     .offer p.delivery             { font-size: 25px;}
